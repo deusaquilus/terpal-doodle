@@ -6,6 +6,7 @@ import io.nacular.doodle.application.application
 import io.nacular.doodle.core.*
 import io.nacular.doodle.drawing.*
 import io.nacular.doodle.drawing.Color.Companion.Black
+import io.nacular.doodle.drawing.Color.Companion.Blue
 import io.nacular.doodle.drawing.Color.Companion.Red
 import io.nacular.doodle.drawing.Color.Companion.White
 import io.nacular.doodle.drawing.Color.Companion.Yellow
@@ -38,8 +39,8 @@ class MyApp(display: Display): Application {
   init {
     display += view {
       val bold = TextDecoration(
-        lines     = setOf(),
-        color     = Black,
+        lines     = setOf(TextDecoration.Line.Over),
+        color     = Blue,
         thickness = TextDecoration.Thickness.Absolute(2.0),
         style     = TextDecoration.Style.Solid
       )
